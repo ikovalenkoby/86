@@ -1,0 +1,355 @@
+@font-face {
+font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-display: swap;
+src: local('PT Sans'), local('PTSans-Regular'), url('fonts/PTSans-Regular.woff') format('woff');
+}
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #ECEBEB;
+  margin: 0;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  background: #006088;
+  padding-bottom: 35px;
+  padding-top: 22px;
+  box-sizing: border-box;
+}
+
+.header{
+  max-width: 1260px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__title__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.header__title__text__box {
+  margin-left: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__title__text__box > p {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 36px;
+  line-height: 47px;
+}
+
+.header__title__text__box > p:first-child{
+  font-weight: bold;
+}
+
+.wrap__container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 67px;
+  width: 100%;
+  text-align: center;
+}
+
+.menu__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  list-style: none;
+}
+
+.menu__item-one__level {
+  margin-right: 30px;
+}
+
+.menu__item-one__level:last-child {
+  margin: 0;
+}
+
+.menu__links {
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 0 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.menu__links-not_parent {
+  padding-right: 15px;
+}
+
+.sub__menu::before {
+  content: '';
+  position: absolute; /* Абсолютное позиционирование */
+  left: 20px; top: -15px; /* Положение треугольника */
+  border: 7px solid transparent; /* Прозрачные границы */
+  border-bottom: 9px solid #FFFFFF; /* Добавляем треугольник */
+}
+
+.sub__menu-list {
+  background: #FFFFFF;
+  display: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px 0px;
+  margin-top: -1px;
+}
+
+.menu__item-two__level {
+  background: #FFFFFF;
+  border-bottom: 1px solid #CDCECF;
+  width: 85%;
+}
+
+.menu__item-two__level:last-child {
+  border-bottom: 0;
+}
+
+.menu__links-two__level {
+  color: #006088;
+  width: 100%;
+  font-size: 15px;
+  line-height: 19px;
+  padding: 10px 5px;
+  text-decoration: none;
+}
+
+.figure {
+  margin-left: 5px;
+}
+
+.menu__links-one__level:hover {
+  background: #FFFFFF;
+  border-radius: 23px;
+  color: #006088;
+  cursor: pointer;
+}
+
+.menu__item-one__level:hover .sub__menu-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  width: 100%;
+}
+
+.menu__links-two__level:hover {
+  color: #818C90;
+}
+
+/*--------------------------*/
+.content {
+  background: #FFFFFF;
+  max-width: 1260px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 50px 45px 50px 45px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  flex-grow: 1;
+
+}
+
+.content a {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration-line: underline;
+  color: #00407A;
+}
+
+.content h1 {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 45px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.content h3 {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+/*--------------------------*/
+footer{
+  background: #006088;
+  flex-grow: 0;
+  box-sizing: border-box;
+}
+
+.footer_box {
+  max-width: 1260px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 45px 40px 45px;
+  box-sizing: border-box;
+}
+
+.footer_box > p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.finde_box {
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.finde_box input {
+  outline:none;
+  border: 0;
+  height: 29px;
+  padding: 5px 5px 5px 11px;
+  box-sizing: border-box;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #636161;
+}
+
+.finde_box img {
+  width: 21px;
+  padding-right: 5px;
+  box-sizing: border-box;
+}
+
+
+/*-------------------------*/
+@media only screen and (max-width: 1050px) {
+  .menu > ul > li {
+    margin-right: 25px;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .menu > ul > li {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .menu > ul > li {
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 985px) {
+  .menu > ul > li {
+    margin-right: 11px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .menu ul li a {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  .menu ul > li ul li a {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+  .menu ul li a {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  .menu ul > li ul li a {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
